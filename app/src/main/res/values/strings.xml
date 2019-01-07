@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">Phisical</string>
     <string name="title_toolbar">เลือกศึกษาข้อมูล</string>
+    <string name="title_toolbar_video">เลือกวีดิโอ</string>
+    <string name="name_title_phone">ปรึกษาแพทย์</string>
+    <string name="hospital_name">โรงพยาบาลตากสินมหาราช</string>
+    <string name="doctor">แพทย์และผู้เชี่ยวชาญในการกายภาพบำบัด</string>
+    <string name="callphone">094-628-8393</string>
+    <string name="title_list_phisical">สร้างผู้ป่วย</string>
+    <string name="title_phisical">แนะนำท่ากายภาพบำบัด</string>
+    <string name="title_save_phisical">บันทึกประวัติการกายภาพ</string>
+    <string name="title_present">รายงานประวัติการกายภาพบำบัด</string>
 
-    <string name="A1">อัมพาตประเภทต่างๆ</string>
-    <string name="A2">อการป้องกันภาวะแทรกซ้อน</string>
-    <string name="A3">อความรู้เบื้องต้นสำหรับผู้สูงอายุ</string>
-    <string name="A4">อความรู้เบื้องต้นการดูแลผู้สูงอายุ</string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->

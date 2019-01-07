@@ -12,37 +12,62 @@
         android:layout_margin="30dp"
         android:orientation="vertical">
 
-        <Button
+        <ImageView
             android:id="@+id/btn1"
-            android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="กายภาพบำบัดผู้ป่วยติดเตียง"
-            android:textSize="20dp"/>
+            android:src="@drawable/main" />
 
-        <Button
+        <ImageView
             android:id="@+id/btn2"
-            android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ให้ความรู้เบื้องต้น"
-            android:textSize="20dp"/>
+            android:src="@drawable/main2" />
 
-        <Button
-            android:id="@+id/btn3"
-            android:layout_margin="20dp"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ปรึกษาแพทย์/ผู้เชี่ยวชาญ"
-            android:textSize="20dp"/>
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btn4"
-            android:layout_margin="20dp"
+            <ImageView
+                android:id="@+id/btn3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/phone" />
+
+            <ImageView
+                android:id="@+id/btn4"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="User Manual"
-            android:textSize="20dp"/>
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:textSize="18dp"
+                android:text="@string/name_title_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="80dp"
+                android:textSize="18dp"
+                android:text="User Manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

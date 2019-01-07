@@ -17,26 +17,17 @@ public class SubjectActivity extends AppCompatActivity {
 
     ListView mlistView;
 
-    String[] countryNames = {"อัมพาตประเภทต่างๆ", "อัมพาตประเภทต่างๆ", "อัมพาตประเภทต่างๆ", "การป้องกันภาวะแทรกซ้อน", "ความรู้เบื้องต้นสำหลับผู้สูงอายุ",
-                            "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ", "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ", "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ", "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ",
-                            "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ", "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ", "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ"};
+    String[] countryNames = {"อัมพาตประเภทต่างๆ", "การป้องกันภาวะแทรกซ้อน", "ความรู้เบื้องต้นสำหรับผู้สูงอายุ",
+                            "ความรู้เบื้องต้นสำหรับการดูแลผู้สูงอายุ",};
 
     String[] countryNamesSubtitle = {"ผู้ป่วยอัมพาตครึ่งซีก", "ผู้ป่วยอัมพาตครึ่งท่อน", "ผู้ป่วยอัมพาตทั้งตัว", "ความรู้เบื้องต้น",
                                 "ด้านอาหาร", "ด้านการเคลื่อนไหวร่างกายและการออกกำลังกาย", "ด้านการขับถ่าย", "ด้านการป้องกันอุบัติเหตุในบ้าน",
                                 "ด้านการติดเชื้อและโรคประจำตัว", "ด้านสุขภาพจิต", "ด้านสิ่งแวดล้อม"};
 
-    int[] countryFlags = {R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard,
-            R.drawable.clipboard};
+    int[] countryFlags = {R.drawable.clipboard3,
+            R.drawable.clipboard3,
+            R.drawable.clipboard2,
+            R.drawable.clipboard2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
