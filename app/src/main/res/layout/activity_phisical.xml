@@ -8,7 +8,9 @@
     android:orientation="vertical"
     tools:context=".PhisicalActivity">
 
+    <!--Add-->
     <LinearLayout
+        android:id="@+id/AddPhysical"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:orientation="horizontal"

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddformActivity">
+
+    <!--Content-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--Toolbal-->
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbarAdd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />-->
+
+    <!--Fragment-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/contentFragmentAdd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Physical Type-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/physical_type"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/pt1"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/pt2"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/pt3"
+                    android:textSize="20dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/adl"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <!--Group1-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="1.Feeding (การรับประทานอาหารเมื่อเตรียมอาหารไว้ให้เรียบร้อยต่อหน้า)"
+                android:textSize="18dp" />
+            <!--Group1-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ไม่สามารถตักอาหารเข้าปากได้ ต้องมีคนป้อนให้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ช่วยใช้ช้อนตักเตรียมไว้ให้หรือตักเป็นชิ้นเล็กๆไว้ล่วงหน้า"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ตักอาหารและช่วยตัวเองได้ปกติ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            <!--Group2-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.Transfer (ลุกนั่งจากที่นอนหรือจากเตียงไปยังเก้าอี้)"
+                android:textSize="18dp" />
+            <!--Group2-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ไม่สามารถนั่งได้ (นั่งแล้วจะล้มเสมอ) หรือต้องใช้คนสองคนช่วยกันยกขึ้น"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ต้องการความช่วยเหลืออย่างมากจึกจะนั่งได้ เช่น ต้องใช้คนที่แข็งแรง หนือมีทักษะ 1 คน หรือใช้คนทั่วไป 2 คน พยุงหรือดันขึ้นมาจึกจะนั่งได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ต้องการความช่วยเหลือบ้าง เช่น บอกให้ทำตามหหรือช่วยพยุงเล็กน้อย หรือต้องมีคนคอยดูแลความปลอดภัย"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="3 = ทำเองได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group3-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.Grooming (ล้างหน้า หวีผม แปรงฟัน โกนหนวด)"
+                android:textSize="18dp" />
+            <!--Group3-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ต้องการความช่วยเหลือ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ทำเองได้ (รวมทั้งที่ทำได้เองถ้าเตรียมอุปกรณ์ไว้ให้)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group4-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Toilet"
+                android:textSize="18dp" />
+            <!--Group4-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ช่วยตัวเองไม่ได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ทำเองได้บ้าง (อย่างน้อยทำความสะอาดตัวเองได้หลังเสร็จธุระ) แต่ต้องการความช่วยเหลือในบางสิ่ง"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ช่วยเหลือตัวเองได้ดี (ขึ้นนั่งและลงจากโถส้วมได้เอง ทำความสะอาดได้เรียบร้อยหลักจากเสร็จธุระแล้วใส่เสื้อผ้าได้เรียบร้อย)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group5-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Bathing (การอาบน้ำ)"
+                android:textSize="18dp" />
+            <!--Group5-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ต้องมีคนช่วยเหลือหรือทำให้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = อาบน้ำได้เอง"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group6-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Toilet"
+                android:textSize="18dp" />
+            <!--Group6-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ช่วยตัวเองไม่ได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ทำเองได้บ้าง (อย่างน้อยทำความสะอาดตัวเองได้หลังเสร็จธุระ) แต่ต้องการความช่วยเหลือในบางสิ่ง"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ช่วยเหลือตัวเองได้ดี (ขึ้นนั่งและลงจากโถส้วมได้เอง ทำความสะอาดได้เรียบร้อยหลักจากเสร็จธุระแล้วใส่เสื้อผ้าได้เรียบร้อย)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group7-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Toilet"
+                android:textSize="18dp" />
+            <!--Group7-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ช่วยตัวเองไม่ได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ทำเองได้บ้าง (อย่างน้อยทำความสะอาดตัวเองได้หลังเสร็จธุระ) แต่ต้องการความช่วยเหลือในบางสิ่ง"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ช่วยเหลือตัวเองได้ดี (ขึ้นนั่งและลงจากโถส้วมได้เอง ทำความสะอาดได้เรียบร้อยหลักจากเสร็จธุระแล้วใส่เสื้อผ้าได้เรียบร้อย)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group8-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Toilet"
+                android:textSize="18dp" />
+            <!--Group8-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ช่วยตัวเองไม่ได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ทำเองได้บ้าง (อย่างน้อยทำความสะอาดตัวเองได้หลังเสร็จธุระ) แต่ต้องการความช่วยเหลือในบางสิ่ง"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ช่วยเหลือตัวเองได้ดี (ขึ้นนั่งและลงจากโถส้วมได้เอง ทำความสะอาดได้เรียบร้อยหลักจากเสร็จธุระแล้วใส่เสื้อผ้าได้เรียบร้อย)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group9-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Toilet"
+                android:textSize="18dp" />
+            <!--Group9-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ช่วยตัวเองไม่ได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ทำเองได้บ้าง (อย่างน้อยทำความสะอาดตัวเองได้หลังเสร็จธุระ) แต่ต้องการความช่วยเหลือในบางสิ่ง"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ช่วยเหลือตัวเองได้ดี (ขึ้นนั่งและลงจากโถส้วมได้เอง ทำความสะอาดได้เรียบร้อยหลักจากเสร็จธุระแล้วใส่เสื้อผ้าได้เรียบร้อย)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            !--Group10-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Toilet"
+                android:textSize="18dp" />
+            <!--Group10-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="0 = ช่วยตัวเองไม่ได้"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="1 = ทำเองได้บ้าง (อย่างน้อยทำความสะอาดตัวเองได้หลังเสร็จธุระ) แต่ต้องการความช่วยเหลือในบางสิ่ง"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="2 = ช่วยเหลือตัวเองได้ดี (ขึ้นนั่งและลงจากโถส้วมได้เอง ทำความสะอาดได้เรียบร้อยหลักจากเสร็จธุระแล้วใส่เสื้อผ้าได้เรียบร้อย)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="บันทึก"-->
+        <!--android:textSize="22dp" />-->
+
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

@@ -12,12 +12,14 @@
         android:layout_margin="30dp"
         android:orientation="vertical">
 
+        <!--Physical Button-->
         <ImageView
             android:id="@+id/btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/main" />
 
+        <!--Educate Button-->
         <ImageView
             android:id="@+id/btn2"
             android:layout_width="match_parent"
@@ -29,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!--Call Button-->
             <ImageView
                 android:id="@+id/btn3"
                 android:layout_marginLeft="25dp"
@@ -37,6 +40,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/phone" />
 
+            <!--UserManual Button-->
             <ImageView
                 android:id="@+id/btn4"
                 android:layout_marginLeft="110dp"

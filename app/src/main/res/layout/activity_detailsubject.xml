@@ -15,4 +15,59 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <ScrollView
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="@string/educate_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:text="@string/educate_aa"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="@string/educate_b"
+                android:layout_marginTop="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:text="@string/educate_bb"
+                android:layout_marginTop="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/educate_c"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="325dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/educate_cc"
+                android:textSize="18dp"
+                android:layout_marginTop="360dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
 </RelativeLayout>
