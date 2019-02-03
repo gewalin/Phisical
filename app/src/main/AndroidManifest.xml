@@ -26,7 +26,8 @@
         <activity android:name=".SubjectActivity" />
         <activity android:name=".DetailsubjectActivity" />
         <activity android:name=".DetailvideoActivity" />
-        <activity android:name=".AddformActivity"></activity>
+        <activity android:name=".AddformActivity" />
+        <activity android:name=".SavephysicalActivity"></activity>
     </application>
 
 </manifest>

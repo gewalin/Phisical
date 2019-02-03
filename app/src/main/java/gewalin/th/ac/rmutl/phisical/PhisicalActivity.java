@@ -23,5 +23,15 @@ public class PhisicalActivity extends AppCompatActivity {
             }
         });
 
+//        Save Physical
+        LinearLayout linearLayout1 = (LinearLayout) findViewById(R.id.savePhysical);
+        linearLayout1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(PhisicalActivity.this,SavephysicalActivity.class);
+                startActivity(intent1);
+            }
+        });
+
     }
 }
